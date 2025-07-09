@@ -22,7 +22,7 @@ jobs:
           for file in src/*.typ; do
             if [ -f "$file" ]; then
               filename=$(basename "$file" .typ)
-              typst compile --root . "$file" "build/${filename}.pdf"
+              typst compile --root ./ --font-path ./fonts "$file" "build/${filename}.pdf"
             fi
           done
       - name: Upload PDF files
