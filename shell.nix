@@ -6,6 +6,11 @@ pkgs.mkShell {
     typst
     tinymist
     typstfmt
-    iosevka
+    (writeShellScriptBin "typs" ''
+      ${lib.getExe typst} watch --root ./ "$1" $(basename "$1" .typ).png
+    '')
+    (writeShellScriptBin "typdf" ''
+      ${lib.getExe typst} compile --root ./ "$1" $(basename "$1" .typ).pdf
+    '')
   ];
 }
