@@ -21,9 +21,7 @@
       #address
 
       #set text(fill: blue)
-      #utils.space-between(
-        ..links,
-      )
+      #utils.space-between(..links)
     ]
     #line(length: 100%)
   ]
@@ -49,7 +47,14 @@
   ]
 }
 
-#let experience(role: "", location: "", company: "", start: "", end: "", points: ()) = {
+#let experience(
+  role: "",
+  location: "",
+  company: "",
+  start: "",
+  end: "",
+  points: (),
+) = {
   [
     #utils.window-xp(
       nw: role,
@@ -76,7 +81,14 @@
 
 // Complete builder
 
-#let full(head: "", profile: "", education: (), experience: (), projects: (), skills-dict: (:)) = {
+#let full(
+  head: "",
+  profile: "",
+  education: (),
+  experience: (),
+  projects: (),
+  skills-dict: (:),
+) = {
   show: preset-style
 
   head

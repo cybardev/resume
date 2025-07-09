@@ -3,13 +3,17 @@
 // Resume
 
 #resume.full(
-  head: resume.header(name: "Sheikh Saad Abdullah", address: "B3L 4P7, Halifax, NS, Canada", links: (
-    link("tel:+1 (902) 818-0048"),
-    link("mailto:sheikh@cybar.dev"),
-    link("https://cybar.dev", "cybar.dev"),
-    link("https://www.linkedin.com/in/cybardev/", "linkedin.com/in/cybardev"),
-    link("https://github.com/cybardev", "github.com/cybardev"),
-  )),
+  head: resume.header(
+    name: "Sheikh Saad Abdullah",
+    address: "B3L 4P7, Halifax, NS, Canada",
+    links: (
+      link("tel:+1 (902) 818-0048"),
+      link("mailto:sheikh@cybar.dev"),
+      link("https://cybar.dev", "cybar.dev"),
+      link("https://www.linkedin.com/in/cybardev/", "linkedin.com/in/cybardev"),
+      link("https://github.com/cybardev", "github.com/cybardev"),
+    ),
+  ),
   profile: "Adaptable and enthusiastic Computer Science recent grad with expertise in Python, JavaScript, Git, Linux, and various standard tools and technologies. Completed two co-op internships in the software development industry and proactively engaged in creating open-source software projects, showcasing a commitment to continuous learning and creative problem-solving. Highly interested in DevOps and Cloud, currently looking to apply acquired skills in a new work environment.",
   education: (
     resume.education(

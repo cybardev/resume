@@ -4,13 +4,17 @@
 
 // Resume
 
-#resume.header(name: "Sheikh Saad Abdullah", address: "B3L 4P7, Halifax, NS, Canada", links: (
-  link("tel:+1 (902) 818-0048"),
-  link("mailto:sheikh@cybar.dev"),
-  link("https://cybar.dev", "cybar.dev"),
-  link("https://www.linkedin.com/in/cybardev/", "linkedin.com/in/cybardev"),
-  link("https://github.com/cybardev", "github.com/cybardev"),
-))
+#resume.header(
+  name: "Sheikh Saad Abdullah",
+  address: "B3L 4P7, Halifax, NS, Canada",
+  links: (
+    link("tel:+1 (902) 818-0048"),
+    link("mailto:sheikh@cybar.dev"),
+    link("https://cybar.dev", "cybar.dev"),
+    link("https://www.linkedin.com/in/cybardev/", "linkedin.com/in/cybardev"),
+    link("https://github.com/cybardev", "github.com/cybardev"),
+  ),
+)
 
 == Profile
 
