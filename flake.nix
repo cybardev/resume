@@ -1,5 +1,5 @@
 {
-  description = "A Nix-flake-based Zola development environment";
+  description = "Flake-based Nix devshell";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-25.05";
   outputs =
     { nixpkgs, ... }:
