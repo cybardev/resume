@@ -4,7 +4,7 @@
 
 #let preset-style(body) = {
   set par(leading: 0.5em)
-  set page(paper: "us-letter", margin: (x: 0.1in, top: 0.15in, bottom: 0in))
+  set page(paper: "us-letter", margin: (x: 0.1in, top: 0.25in, bottom: 0in))
   set text(font: "PT Sans", size: 12pt, fill: black)
   show heading.where(level: 1): set text(size: 22pt)
   show heading.where(level: 2): it => underline(it)
