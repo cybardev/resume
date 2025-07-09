@@ -14,12 +14,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
       - name: Compile Typst files
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: "src/*.typ"
+        run: |
+          mkdir -p build
+          for file in src/*.typ; do
+            if [ -f "$file" ]; then
+              filename=$(basename "$file" .typ)
+              typst compile --root . "$file" "build/${filename}.pdf"
+            fi
+          done
       - name: Upload PDF files
         uses: actions/upload-artifact@v4
         with:
           name: Resume
-          path: "src/*.pdf"
+          path: "build/*.pdf"
