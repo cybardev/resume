@@ -1,4 +1,7 @@
 # misc.
 .DS_Store
 .direnv
+
+# preview files
 *.pdf
+*.png
