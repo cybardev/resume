@@ -1,4 +1,4 @@
-#import "../lib/resume.typ"
+#import "lib/resume.typ"
 
 // Resume
 
