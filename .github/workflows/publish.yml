@@ -1,0 +1,25 @@
+name: Build Typst resumes
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish.yml"
+      - "src/*.typ"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Compile Typst files
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: "src/*.typ"
+      - name: Upload PDF files
+        uses: actions/upload-artifact@v4
+        with:
+          name: Resume
+          path: "src/*.pdf"
