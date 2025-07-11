@@ -3,5 +3,6 @@
 .direnv
 
 # preview files
+_preview/
 *.pdf
 *.png
