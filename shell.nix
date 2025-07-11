@@ -3,6 +3,7 @@
 }:
 pkgs.mkShell {
   packages = with pkgs; [
+    tdf
     typst
     tinymist
     typstfmt
