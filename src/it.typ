@@ -18,7 +18,12 @@
 
 == Profile
 
-Adaptable and enthusiastic Computer Science recent grad with expertise in Python, JavaScript, Git, Linux, and various standard tools and technologies. Completed two co-op internships in the software development industry and proactively engaged in creating open-source software projects, showcasing a commitment to continuous learning and creative problem-solving. Highly interested in DevOps and Cloud, currently looking to apply acquired skills in a new work environment.
+Adaptable and enthusiastic Computer Science recent grad with expertise in
+Python, Git, Linux, Shell Scripting, and various standard tools and technologies.
+Completed two co-op internships in the software development industry and
+proactively engaged in creating open-source projects, showcasing a commitment to
+continuous learning and creative problem-solving. Highly interested in SRE and SysAdmin,
+looking to apply acquired skills in a new work environment.
 
 == Education
 
@@ -37,6 +42,22 @@ Adaptable and enthusiastic Computer Science recent grad with expertise in Python
   ),
 )
 
+#resume.education(
+  institution: "International Information System Security Certification Consortium (ISC2)",
+  location: "Halifax, NS",
+  program: "Certified",
+  major: "Cybersecurity (CC) Certificate",
+  start: "Jun 2025",
+  end: "May 2026",
+  courses: (
+    "Systems Security",
+    "Network Security",
+    "Network Topology",
+    "Cloud Security",
+    "Log File Analysis",
+  ),
+)
+
 == Experience
 
 #resume.experience(
@@ -46,11 +67,8 @@ Adaptable and enthusiastic Computer Science recent grad with expertise in Python
   start: "Sep 2023",
   end: "Dec 2023",
   points: (
-    "Developed Python module to annotate videos with metadata consumed from Apache Kafka topics using GStreamer pipelines, allowing farm operators to view video stream details via dashboard",
-    "Collaborated with a dynamic remote-first Agile team on ReelAppetite, a flagship product, implementing key features according to client requirements",
-    "Implemented features using test-driven development by creating unit and integration tests to be run in the CI/CD pipeline, validating expected processor workflow",
-    "Augmented stream processor in development to standardize environment variable names to avoid conflicts",
-    "Researched porting Docker container from x86 to ARM (Nvidia Jetson) to run processor locally as edge application",
+    "Developed Python module to annotate videos with metadata consumed from Kafka topics using GStreamer.",
+    "Worked to port Docker container to Nvidia Jetson to run video stream processor locally as edge application.",
   ),
 )
 
@@ -61,63 +79,77 @@ Adaptable and enthusiastic Computer Science recent grad with expertise in Python
   start: "May 2023",
   end: "Aug 2023",
   points: (
-    "Developed Python script for audio generation, playback, and logging, to test underwater acoustic projectors in-house",
-    "Configured Raspberry Pi systems with Linux to develop and test the Acoustic Projector Control and Logging System",
-    "Implemented module to connect to private Signal K server and utilize its API to effectively retrieve sensor data",
-    "Created a framework for logging data from sensors, consuming it via API calls, and storing it in an SQLite database",
+    "Configured Raspberry Pi systems with Linux to develop and test the Acoustic Projector Control and Logger.",
+    "Created framework to log data from AIS, GPS, wind, etc. tracking sensors on marine vessels into SQL database.",
+    "Establish private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems."
+  ),
+)
+
+#resume.experience(
+  company: "The Source (BELL)",
+  location: "Halifax, NS",
+  role: "Sales Associate (seasonal)",
+  start: "Sep 2022",
+  end: "Dec 2022",
+  points: (
+    "Listen to customer requirements and present choice among available optimal and relevant technical solutions.",
+    "Troubleshoot client device and connectivity issues on a variety of iOS and Android mobile systems.",
   ),
 )
 
 == Projects
 
 #resume.project(
+  name: "Nix System Administration",
+  lnk: "github.com/cybardev/nix-dotfiles",
+  desc: "Declaratively manage monolithic NixOS (Linux) and Nix-Darwin (macOS) system configuration, ensuring package consistency across the different systems. Oversee regular system updates and automatic backups via Nix generations for system reliability. System-wide firewall and in-browser script blocker setup to maximize network security.",
+  skills: ("Nix", "System Administration", "Firewall", "Networks"),
+)
+
+#resume.project(
   name: "Pyrefly Nix Package",
   lnk: "github.com/NixOS/nixpkgs",
-  desc: "Packaged Facebook's new Python type checker (github.com/facebook/pyrefly) for Nixpkgs, making it available to 10,000+ Nix users on macOS, Linux, and WSL.",
+  desc: "Packaged (and currently maintaining) Facebook's new Python type checker (github.com/facebook/pyrefly) for Nixpkgs, making it available to 10,000+ Nix users on macOS, Linux, and WSL. Overseeing updates and PRs to ensure smooth package experience for users.",
   skills: ("Nix", "Rust", "Python", "Build Systems"),
 )
 
 #resume.project(
   name: "Resumake",
   lnk: "github.com/cybardev/resumake",
-  desc: "Programmatic resume generator published to pkg.go.dev and Dockerhub - built and deployed using GitHub Actions CI/CD workflow. Deployed to Microsoft Azure as a publicly available Azure Container App.",
+  desc: "Programmatic resume generator published to pkg.go.dev and Dockerhub - built and deployed using GitHub Actions CI/CD workflow. Deployed to Microsoft Azure as a publicly available Azure Container App. Reduced annual costs by 60 CAD, migrating to Render.",
   skills: ("Go", "Docker", "CI/CD", "Azure", "Python", "Shell Script"),
-)
-
-#resume.project(
-  name: "Noctrun",
-  lnk: "github.com/cybardev/Noctrun",
-  desc: "2D side-scrolling endless runner game featuring the ghosts of Bengal, made in Unity using C# scripts. Built for Windows, Mac, Linux, and Desktop Web browsers.",
-  skills: ("C#", "Unity", "Game Development"),
 )
 
 == Skills
 
-#resume.skills(entries: (
-  "Technologies": (
-    "Python",
-    "Go",
-    "Nix",
-    "Docker",
-    "Git",
-    "Terraform",
-    "Azure",
-    "Kafka",
-    "Mongo",
-    "MySQL",
-    "JavaScript",
-    "Java",
-    "C#",
-    "C/C++",
+#resume.skills(
+  entries: (
+    "Technologies": (
+      "Python",
+      "Go",
+      "Nix",
+      "Docker",
+      "Git",
+      "Terraform",
+      "Azure",
+      "Kafka",
+      "Mongo",
+      "MySQL",
+      "JavaScript",
+      "Java",
+      "C#",
+      "C/C++",
+    ),
+    "Interests": (
+      "Linux",
+      "Shell Scripting",
+      "System Admin",
+      "Automation",
+      "SRE",
+      "Cloud",
+      "CI/CD",
+      "DevOps",
+      "Agile Development",
+    ),
   ),
-  "Interests": (
-    "Linux",
-    "Shell Scripting",
-    "Automation",
-    "Cloud",
-    "CI/CD",
-    "DevOps",
-    "Agile Development",
-    "Data Analytics",
-  ),
-))
+)

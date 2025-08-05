@@ -18,7 +18,13 @@
 
 == Profile
 
-Adaptable and enthusiastic Computer Science recent grad with expertise in Python, JavaScript, Git, Linux, and various standard tools and technologies. Completed two co-op internships in the software development industry and proactively engaged in creating open-source software projects, showcasing a commitment to continuous learning and creative problem-solving. Highly interested in DevOps and Cloud, currently looking to apply acquired skills in a new work environment.
+Adaptable and enthusiastic Computer Science recent grad with expertise in
+Python, JavaScript, Git, Linux, and various standard tools and technologies.
+Completed two co-op internships in the software development industry and
+proactively engaged in creating open-source software projects, showcasing
+a commitment to continuous learning and creative problem-solving.
+Highly interested in DevOps and Cloud, looking to apply acquired skills
+in a new role.
 
 == Education
 
@@ -34,6 +40,22 @@ Adaptable and enthusiastic Computer Science recent grad with expertise in Python
     "Data Structures and Algorithms",
     "Software Engineering",
     "Systems Security",
+  ),
+)
+
+#resume.education(
+  institution: "International Information System Security Certification Consortium (ISC2)",
+  location: "Halifax, NS",
+  program: "Certified",
+  major: "Cybersecurity (CC) Certificate",
+  start: "Jun 2025",
+  end: "May 2026",
+  courses: (
+    "Systems Security",
+    "Network Security",
+    "Network Topology",
+    "Cloud Security",
+    "Log File Analysis",
   ),
 )
 
@@ -82,13 +104,6 @@ Adaptable and enthusiastic Computer Science recent grad with expertise in Python
   lnk: "github.com/cybardev/resumake",
   desc: "Programmatic resume generator published to pkg.go.dev and Dockerhub - built and deployed using GitHub Actions CI/CD workflow. Deployed to Microsoft Azure as a publicly available Azure Container App.",
   skills: ("Go", "Docker", "CI/CD", "Azure", "Python", "Shell Script"),
-)
-
-#resume.project(
-  name: "Noctrun",
-  lnk: "github.com/cybardev/Noctrun",
-  desc: "2D side-scrolling endless runner game featuring the ghosts of Bengal, made in Unity using C# scripts. Built for Windows, Mac, Linux, and Desktop Web browsers.",
-  skills: ("C#", "Unity", "Game Development"),
 )
 
 == Skills
