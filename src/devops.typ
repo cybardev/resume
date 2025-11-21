@@ -69,8 +69,8 @@ looking to apply acquired skills in a new work environment.
   points: (
     "Developed Python module to annotate videos with metadata consumed from Kafka topics using GStreamer.",
     "Worked to port x86 Docker container to Nvidia Jetson to run video stream processor locally as edge application.",
-    "Standardized environment variable names during stream processor development, avoiding naming conflicts",
-    "Implemented features using test-driven development by creating unit and integration tests to be run in the CI/CD pipeline, validating expected processor workflow",
+    "Standardized environment variable names during stream processor development, avoiding naming conflicts.",
+    "Implemented features using test-driven development by creating unit and integration tests to be run in the CI/CD pipeline, validating expected processor workflow.",
   ),
 )
 
@@ -81,7 +81,7 @@ looking to apply acquired skills in a new work environment.
   start: "May 2023",
   end: "Aug 2023",
   points: (
-    "Developed Python script for audio generation, playback, and logging to test underwater acoustic projectors",
+    "Developed Python script for audio generation, playback, and logging to test underwater acoustic projectors.",
     "Configured Raspberry Pi systems with Linux to develop and test the Acoustic Projector Control and Logger.",
     "Created framework to log data from AIS, GPS, wind, etc. tracking sensors on marine vessels into SQL database.",
     "Establish private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems.",

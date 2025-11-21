@@ -43,7 +43,9 @@
       sw: program + " in " + major,
       se: start + " - " + end,
     )
-    *Notable Courses*: #courses.join(", ")
+    #if courses.len() > 0 [
+      *Notable Courses*: #courses.join(", ")
+    ]
   ]
 }
 

@@ -2,73 +2,64 @@
 
 #show: resume.preset-style
 
+#set page(paper: "us-letter", margin: (x: 0.1in, top: 0.25in, bottom: 0in))
+
 // Resume
 
 #resume.header(
   name: "Sheikh Saad Abdullah",
   address: "B3L 4P7, Halifax, NS, Canada",
   links: (
-    link("tel:+1 (902) 818-0048"),
     link("mailto:sheikh@cybar.dev"),
-    link("https://cybar.dev", "cybar.dev"),
     link("https://www.linkedin.com/in/cybardev/", "linkedin.com/in/cybardev"),
-    link("https://github.com/cybardev", "github.com/cybardev"),
+    link("tel:+1 (902) 818-0048"),
   ),
 )
 
 == Profile
 
-Adaptable and enthusiastic Computer Science recent grad with expertise in
-Python, Git, Linux, Shell Scripting, and various standard tools and technologies.
-Completed two co-op internships in the software development industry and
-proactively engaged in creating open-source projects, showcasing a commitment to
-continuous learning and creative problem-solving. Highly interested in SRE and SysAdmin,
-looking to apply acquired skills in a new work environment.
+Adaptable and enthusiastic recent graduate exploring the service sector, looking to practice and develop in-demand soft skills while providing excellent service to customers and giving back to the community. I love working with people and for the people, and am passionate about meeting and exceeding quality expectations.
 
-== Education
+== Skills
 
-#resume.education(
-  institution: "Saint Mary's University",
-  location: "Halifax, NS",
-  program: "Bachelor of Science",
-  major: "Computing Science",
-  start: "Sep 2020",
-  end: "Jan 2025",
-  courses: (
-    "Artificial Intelligence",
-    "Data Structures and Algorithms",
-    "Software Engineering",
-    "Systems Security",
+#resume.skills(
+  entries: (
+    "Technologies": (
+      "MS Office (Word, Excel, Powerpoint, Outlook)",
+      "Azure",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "MySQL",
+      "Java",
+      "C#",
+    ),
+    "Interests": (
+      "Learning",
+      "Teaching",
+      "Automation",
+      "Cloud",
+      "Agile Development",
+      "Linux",
+      "Economic Sociology",
+    ),
   ),
 )
 
-#resume.education(
-  institution: "International Information System Security Certification Consortium (ISC2)",
-  location: "Halifax, NS",
-  program: "Certified",
-  major: "Cybersecurity (CC) Certificate",
-  start: "Jun 2025",
-  end: "May 2026",
-  courses: (
-    "Systems Security",
-    "Network Security",
-    "Network Topology",
-    "Cloud Security",
-    "Log File Analysis",
-  ),
-)
-
-== Experience
+== Professional Experience
 
 #resume.experience(
-  company: "ReelData AI",
+  company: "The Source (BELL)",
   location: "Halifax, NS",
-  role: "Junior Software Developer (co-op)",
-  start: "Sep 2023",
-  end: "Dec 2023",
+  role: "Sales Associate (seasonal)",
+  start: "Sep 2022",
+  end: "Dec 2022",
   points: (
-    "Developed Python module to annotate videos with metadata consumed from Kafka topics using GStreamer.",
-    "Worked to port Docker container to Nvidia Jetson to run video stream processor locally as edge application.",
+    "Listened to customer requirements and presented choice among optimal and relevant technical solutions.",
+    "Troubleshot client device and connectivity issues on a variety of iOS and Android mobile systems.",
+    "Marketed new products and phone plans to potential customers and suggested relevant add-ons.",
+    "Supported fellow coworkers in their daily tasks, maximizing efficiency and increasing throughput.",
+    "Performed routine inventory management and tagging, ensuring efficient store operations.",
   ),
 )
 
@@ -81,75 +72,62 @@ looking to apply acquired skills in a new work environment.
   points: (
     "Configured Raspberry Pi systems with Linux to develop and test the Acoustic Projector Control and Logger.",
     "Created framework to log data from AIS, GPS, wind, etc. tracking sensors on marine vessels into SQL database.",
-    "Establish private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems."
+    "Established private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems.",
   ),
 )
 
 #resume.experience(
-  company: "The Source (BELL)",
+  company: "ReelData AI",
   location: "Halifax, NS",
-  role: "Sales Associate (seasonal)",
-  start: "Sep 2022",
-  end: "Dec 2022",
+  role: "Junior Software Developer (co-op)",
+  start: "Sep 2023",
+  end: "Dec 2023",
   points: (
-    "Listen to customer requirements and present choice among available optimal and relevant technical solutions.",
-    "Troubleshoot client device and connectivity issues on a variety of iOS and Android mobile systems.",
+    "Collaborated with dynamic Agile team, implementing key features according to client requirements.",
+    "Developed Python module to annotate videos with metadata consumed from Kafka topics using GStreamer.",
+    "Worked to port Docker container to Nvidia Jetson to run video stream processor locally as edge application.",
   ),
 )
 
-== Projects
+== Personal Experience
 
-#resume.project(
-  name: "Nix System Administration",
-  lnk: "github.com/cybardev/nix-dotfiles",
-  desc: "Declaratively manage monolithic NixOS (Linux) and Nix-Darwin (macOS) system configuration, ensuring package consistency across the different systems. Oversee regular system updates and automatic backups via Nix generations for system reliability. System-wide firewall and in-browser script blocker setup to maximize network security.",
-  skills: ("Nix", "System Administration", "Firewall", "Networks"),
+#resume.experience(
+  company: "Self-employed / Freelance",
+  location: "Halifax, NS",
+  role: "Computer Science Tutor",
+  start: "Oct 2021",
+  end: "Aug 2022",
+  points: (
+    "Tutored students in computing science fundamentals, increasing assigned coursework scores by over 40%.",
+    "Helped achieve a better understanding of technical concepts and principles of programming and web development in languages such as Python, Java, HTML, CSS, and JavaScript.",
+  ),
 )
 
-#resume.project(
-  name: "Pyrefly Nix Package",
-  lnk: "github.com/NixOS/nixpkgs",
-  desc: "Packaged (and currently maintaining) Facebook's new Python type checker (github.com/facebook/pyrefly) for Nixpkgs, making it available to 10,000+ Nix users on macOS, Linux, and WSL. Overseeing updates and PRs to ensure smooth package experience for users.",
-  skills: ("Nix", "Rust", "Python", "Build Systems"),
+#resume.experience(
+  company: "Saint Mary's University",
+  location: "Halifax, NS",
+  role: "Teaching Assistant",
+  start: "Jan 2023",
+  end: "Apr 2023",
+  points: (
+    "Tested and graded Java code assignments submitted by students for performance and accuracy.",
+    "Analyzed errors and suggested corrections to students as feedback.",
+    "Successfully marked over 100 student assignments per semester.",
+  ),
 )
 
-#resume.project(
-  name: "Resumake",
-  lnk: "github.com/cybardev/resumake",
-  desc: "Programmatic resume generator published to pkg.go.dev and Dockerhub - built and deployed using GitHub Actions CI/CD workflow. Deployed to Microsoft Azure as a publicly available Azure Container App. Reduced annual costs by 60 CAD, migrating to Render.",
-  skills: ("Go", "Docker", "CI/CD", "Azure", "Python", "Shell Script"),
-)
+== Education
 
-== Skills
-
-#resume.skills(
-  entries: (
-    "Technologies": (
-      "Python",
-      "Go",
-      "Nix",
-      "Docker",
-      "Git",
-      "Terraform",
-      "Azure",
-      "Kafka",
-      "Mongo",
-      "MySQL",
-      "JavaScript",
-      "Java",
-      "C#",
-      "C/C++",
-    ),
-    "Interests": (
-      "Linux",
-      "Shell Scripting",
-      "System Admin",
-      "Automation",
-      "SRE",
-      "Cloud",
-      "CI/CD",
-      "DevOps",
-      "Agile Development",
-    ),
+#resume.education(
+  institution: "Saint Mary's University",
+  location: "Halifax, NS",
+  program: "Bachelor of Science",
+  major: "Computing Science",
+  start: "Sep 2020",
+  end: "Jan 2025",
+  courses: (
+    "Artificial Intelligence",
+    "Intro to Data Analytics for Business",
+    "Principles of Micro/Macroeconomics",
   ),
 )
