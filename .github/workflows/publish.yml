@@ -15,6 +15,7 @@ on:
 
 env:
   AUTHOR: Sheikh_Saad_Abdullah
+  HTML_REDIRECT: '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=./Resume_Sheikh_Saad_Abdullah.pdf" /></head></html>'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -38,11 +39,12 @@ jobs:
         uses: typst-community/setup-typst@v4
       - name: Compile Typst files
         run: |
-          mkdir -p build
           for file in src/*.typ; do
             if [ -f "$file" ]; then
               filename=$(basename "$file" .typ)
-              typst compile --root ./ --font-path ./fonts "$file" "build/Resume_${{ env.AUTHOR }}_(${filename}).pdf"
+              mkdir -p "build/$filename"
+              echo ${HTML_REDIRECT} > "build/$filename/index.html"
+              typst compile --root ./ --font-path ./fonts "$file" "build/$filename/Resume_${{ env.AUTHOR }}.pdf"
             fi
           done
       - name: Publish Site
