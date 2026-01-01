@@ -125,7 +125,7 @@ Adaptable and enthusiastic recent graduate exploring the service sector, looking
   major: "Computing Science",
   start: "Sep 2020",
   end: "Jan 2025",
-  courses: (
+  focus: (
     "Artificial Intelligence",
     "Intro to Data Analytics for Business",
     "Principles of Micro/Macroeconomics",

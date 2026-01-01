@@ -35,7 +35,7 @@ in a new role.
   major: "Computing Science",
   start: "Sep 2020",
   end: "Jan 2025",
-  courses: (
+  focus: (
     "Artificial Intelligence",
     "Data Structures and Algorithms",
     "Software Engineering",
@@ -50,7 +50,7 @@ in a new role.
   major: "Cybersecurity (CC) Certificate",
   start: "Jun 2025",
   end: "May 2026",
-  courses: (
+  focus: (
     "Systems Security",
     "Network Security",
     "Network Topology",

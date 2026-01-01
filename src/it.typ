@@ -34,7 +34,7 @@ looking to apply acquired skills in a new work environment.
   major: "Computing Science",
   start: "Sep 2020",
   end: "Jan 2025",
-  courses: (
+  focus: (
     "Artificial Intelligence",
     "Data Structures and Algorithms",
     "Software Engineering",
@@ -49,7 +49,7 @@ looking to apply acquired skills in a new work environment.
   major: "Cybersecurity (CC) Certificate",
   start: "Jun 2025",
   end: "May 2026",
-  courses: (
+  focus: (
     "Systems Security",
     "Network Security",
     "Network Topology",
@@ -81,7 +81,7 @@ looking to apply acquired skills in a new work environment.
   points: (
     "Configured Raspberry Pi systems with Linux to develop and test the Acoustic Projector Control and Logger.",
     "Created framework to log data from AIS, GPS, wind, etc. tracking sensors on marine vessels into SQL database.",
-    "Establish private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems."
+    "Establish private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems.",
   ),
 )
 

@@ -4,7 +4,7 @@
 
 #let preset-style(body) = {
   set par(leading: 0.5em)
-  set page(paper: "us-letter", margin: (x: 0.1in, top: 0.15in, bottom: 0in))
+  set page(paper: "us-letter", margin: (x: 0.1in, top: 0.2in, bottom: 0in))
   set text(font: "PT Sans", size: 12pt, fill: black)
   show heading.where(level: 1): set text(size: 22pt)
   show heading.where(level: 2): it => underline(it)
@@ -34,17 +34,17 @@
   major: "",
   start: "",
   end: "",
-  courses: (),
+  focus: (),
 ) = {
   [
     #utils.window-xp(
       nw: institution,
       ne: location,
       sw: program + " in " + major,
-      se: start + " - " + end,
+      se: if end.len() > 0 { start + " - " + end } else { start },
     )
-    #if courses.len() > 0 [
-      *Notable Courses*: #courses.join(", ")
+    #if focus.len() > 0 [
+      *Focus*: #focus.join(", ")
     ]
   ]
 }

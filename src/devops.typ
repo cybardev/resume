@@ -18,45 +18,7 @@
 
 == Profile
 
-Adaptable and enthusiastic Computer Science recent grad with expertise in
-Python, Git, Linux, Shell Scripting, and various standard tools and technologies.
-Completed two co-op internships in the software development industry and
-proactively engaged in creating open-source projects, showcasing a commitment to
-continuous learning and creative problem-solving. Highly interested in DevOps and SRE,
-looking to apply acquired skills in a new work environment.
-
-== Education
-
-#resume.education(
-  institution: "Saint Mary's University",
-  location: "Halifax, NS",
-  program: "Bachelor of Science",
-  major: "Computing Science",
-  start: "Sep 2020",
-  end: "Jan 2025",
-  courses: (
-    "Artificial Intelligence",
-    "Data Structures and Algorithms",
-    "Software Engineering",
-    "Systems Security",
-  ),
-)
-
-#resume.education(
-  institution: "International Information System Security Certification Consortium (ISC2)",
-  location: "Halifax, NS",
-  program: "Certified",
-  major: "Cybersecurity (CC) Certificate",
-  start: "Jun 2025",
-  end: "May 2026",
-  courses: (
-    "Systems Security",
-    "Network Security",
-    "Network Topology",
-    "Cloud Security",
-    "Log File Analysis",
-  ),
-)
+Adaptable self-starting Computer Science grad looking to apply learnings in a hands-on technical role.
 
 == Experience
 
@@ -67,10 +29,10 @@ looking to apply acquired skills in a new work environment.
   start: "Sep 2023",
   end: "Dec 2023",
   points: (
-    "Developed Python module to annotate videos with metadata consumed from Kafka topics using GStreamer.",
-    "Worked to port x86 Docker container to Nvidia Jetson to run video stream processor locally as edge application.",
-    "Standardized environment variable names during stream processor development, avoiding naming conflicts.",
-    "Implemented features using test-driven development by creating unit and integration tests to be run in the CI/CD pipeline, validating expected processor workflow.",
+    "Ensured code quality by adding unit and integration tests automated in CI/CD for each feature implemented.",
+    "Developed video annotation system for fast on-demand information retrieval using Python, Kafka, and GStreamer.",
+    "Ported Docker container from x86 to ARM for local-first processing of video streams on edge Nvidia Jetson SBCs.",
+    "Led effort to standardize development environment to boost dev team productivity using Bash shell scripting.",
   ),
 )
 
@@ -81,10 +43,10 @@ looking to apply acquired skills in a new work environment.
   start: "May 2023",
   end: "Aug 2023",
   points: (
-    "Developed Python script for audio generation, playback, and logging to test underwater acoustic projectors.",
-    "Configured Raspberry Pi systems with Linux to develop and test the Acoustic Projector Control and Logger.",
-    "Created framework to log data from AIS, GPS, wind, etc. tracking sensors on marine vessels into SQL database.",
-    "Establish private mesh network, ensuring communication between on-shore and off-shore Raspberry Pi systems.",
+    "Implemented testing of underwater acoustic projectors for playback of audio generated using Python scripting.",
+    "Streamlined development and testing of acoustic projector control and logger using Linux Raspberry Pi SBCs.",
+    "Enabled logging marine vessel data from AIS, GPS, Wind, etc. sensors into SQL database with custom framework.",
+    "Facilitated reliable data transfer between on-shore and off-shore embedded systems over private mesh network.",
   ),
 )
 
@@ -100,15 +62,54 @@ looking to apply acquired skills in a new work environment.
 #resume.project(
   name: "Pyrefly Nix Package",
   lnk: "github.com/NixOS/nixpkgs",
-  desc: "Packaged (and currently maintaining) Facebook's new Python type checker (github.com/facebook/pyrefly) for Nixpkgs, making it available to 10,000+ Nix users on macOS, Linux, and WSL. Overseeing updates and PRs to ensure smooth package experience for users.",
+  desc: [Packaged (and currently maintaining) Facebook's new Python type checker (#link("https://github.com/facebook/pyrefly")[github.com/facebook/pyrefly]) for Nixpkgs, making it available to 10,000+ Nix users on macOS, Linux, and WSL. Overseeing updates and PRs to ensure smooth package experience for users.],
   skills: ("Nix", "Rust", "Python", "Build Systems"),
+)
+
+#resume.project(
+  name: "Noctrun",
+  lnk: "github.com/cybardev/Noctrun",
+  desc: "Coordinated team of 3 to deliver class project ahead of time with added polish, building unique gameplay experience based on Bangladeshi folklore. Tracked team progress in issues on kanban board. Automated deployment of game as webapp using GitHub Actions.",
+  skills: ("C#", "Unity", "Game Dev", "Agile", "CI/CD"),
 )
 
 #resume.project(
   name: "Resumake",
   lnk: "github.com/cybardev/resumake",
-  desc: "Programmatic resume generator published to pkg.go.dev and Dockerhub - built and deployed using GitHub Actions CI/CD workflow. Deployed to Microsoft Azure as a publicly available Azure Container App. Reduced annual costs by 60 CAD, migrating to Render.",
+  desc: "Programmatic resume generator published to pkg.go.dev and Dockerhub - built and deployed using GitHub Actions CI/CD workflow. Deployed to Microsoft Azure as a publicly available Azure Container App. Reduced annual costs by 60 CAD by migrating to Render.",
   skills: ("Go", "Docker", "CI/CD", "Azure", "Python", "Bash", "IaC"),
+)
+
+== Education
+
+#resume.education(
+  institution: "Saint Mary's University",
+  location: "Halifax, NS",
+  program: "Bachelor of Science",
+  major: "Computing Science",
+  start: "Sep 2020",
+  end: "Jan 2025",
+  focus: (
+    "Artificial Intelligence",
+    "Data Structures and Algorithms",
+    "Software Engineering",
+    "Systems Security",
+  ),
+)
+
+#resume.education(
+  institution: "International Information System Security Certification Consortium (ISC2)",
+  location: "Halifax, NS",
+  program: "Certified",
+  major: "Cybersecurity (CC) Certificate",
+  start: "Jun 2025",
+  focus: (
+    "Systems Security",
+    "Network Security",
+    "Network Topology",
+    "Cloud Security",
+    "Log File Analysis",
+  ),
 )
 
 == Skills
