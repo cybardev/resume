@@ -1,6 +1,13 @@
 {
   pkgs ? import <nixpkgs> { },
 }:
+let
+  fontsConf = pkgs.makeFontsConf {
+    fontDirectories = with pkgs; [
+      paratype-pt-sans
+    ];
+  };
+in
 pkgs.mkShell {
   packages = with pkgs; [
     tdf
@@ -14,4 +21,8 @@ pkgs.mkShell {
       ${lib.getExe typst} compile --root ./ "$1" $(basename "$1" .typ).pdf
     '')
   ];
+
+  shellHook = ''
+    export FONTCONFIG_FILE="${fontsConf}"
+  '';
 }
