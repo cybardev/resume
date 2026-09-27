@@ -6,3 +6,6 @@
 _preview/
 *.pdf
 *.png
+
+# local-only files
+*.local.*
